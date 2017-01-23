@@ -1,0 +1,83 @@
+html, body {
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: auto;
+    font-size: 0;
+}
+
+.waterfall {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 731px;
+    max-height: 100%;
+}
+
+.waterfall img {
+    height: 100%;
+}
+
+.spot1 {
+    position: absolute;
+    top: 14%;
+    left: 38%;
+    width: 10.5%;
+    height: 11.1%;
+    background: url("../img/spot1.png") no-repeat center center;
+    background-size: cover;
+    opacity: .7;
+    transform: rotate(-45deg);
+    animation: spot1 12s linear;
+}
+
+.spot2 {
+    position: absolute;
+    top: 48%;
+    left: 46%;
+    width: 20.2%;
+    height: 21.8%;
+    background: url("../img/spot2.png") no-repeat center center;
+    background-size: cover;
+    opacity: .7;
+    transform: rotate(-45deg);
+    animation: spot2 12s linear;
+}
+
+.rainbow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/rainbow.png") no-repeat center center;
+    background-size: cover;
+    opacity: .7;
+    animation: rainbow 12s linear;
+}
+
+@keyframes spot1 {
+    0% { opacity: 0; transform: rotate(0deg); }
+    20%, 40% { opacity: 1; transform: rotate(0deg); }
+    60% { opacity: 1; transform: rotate(-90deg); }
+    80% { opacity: .7; transform: rotate(-90deg); }
+    100% { opacity: .7; transform: rotate(-45deg); }
+}
+
+@keyframes spot2 {
+    0%, 20% { opacity: 0; transform: rotate(0deg); }
+    40% { opacity: 1; transform: rotate(0deg); }
+    60% { opacity: 1; transform: rotate(-90deg); }
+    80% { opacity: .7; transform: rotate(-90deg); }
+    100% { opacity: .7; transform: rotate(-45deg); }
+}
+
+@keyframes rainbow {
+    0%, 60% { opacity: 0; }
+    80% { opacity: .7; }
+}
