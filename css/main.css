@@ -33,7 +33,7 @@ main {
     background-size: cover;
     opacity: .8;
     transform: rotate(-45deg);
-    animation: spot1 12s linear;
+    animation: spot1 12s;
 }
 
 .spot2 {
@@ -46,7 +46,7 @@ main {
     background-size: cover;
     opacity: .8;
     transform: rotate(-45deg);
-    animation: spot2 12s linear;
+    animation: spot2 12s;
 }
 
 .rainbow {
@@ -58,7 +58,7 @@ main {
     background: url("../img/rainbow.png") no-repeat center center;
     background-size: cover;
     opacity: .7;
-    animation: rainbow 12s linear;
+    animation: rainbow 12s;
 }
 
 @keyframes spot1 {
