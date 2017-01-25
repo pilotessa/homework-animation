@@ -34,8 +34,7 @@ main {
     height: 11.1%;
     background: url("../img/spot1.png") no-repeat center center;
     background-size: cover;
-    opacity: .8;
-    transform: rotate(-45deg);
+    opacity: 0;
     animation: spot1 12s;
 }
 
@@ -47,8 +46,7 @@ main {
     height: 21.8%;
     background: url("../img/spot2.png") no-repeat center center;
     background-size: cover;
-    opacity: .8;
-    transform: rotate(-45deg);
+    opacity: 0;
     animation: spot2 12s;
 }
 
@@ -68,19 +66,19 @@ main {
     0% { opacity: 0; transform: rotate(0deg); }
     20%, 40% { opacity: 1; transform: rotate(0deg); }
     60% { opacity: 1; transform: rotate(-90deg); }
-    80% { opacity: .8; transform: rotate(-90deg); }
-    100% { opacity: .8; transform: rotate(-45deg); }
+    80% { opacity: 1; transform: rotate(-45deg); }
+    100% { opacity: 0; transform: rotate(-45deg); }
 }
 
 @keyframes spot2 {
     0%, 20% { opacity: 0; transform: rotate(0deg); }
     40% { opacity: 1; transform: rotate(0deg); }
     60% { opacity: 1; transform: rotate(-90deg); }
-    80% { opacity: .8; transform: rotate(-90deg); }
-    100% { opacity: .8; transform: rotate(-45deg); }
+    80% { opacity: 1; transform: rotate(-45deg); }
+    100% { opacity: 0; transform: rotate(-45deg); }
 }
 
 @keyframes rainbow {
-    0%, 60% { opacity: 0; }
-    80% { opacity: .7; }
+    0%, 80% { opacity: 0; }
+    100% { opacity: .7; }
 }
