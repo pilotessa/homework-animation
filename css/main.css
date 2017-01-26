@@ -35,7 +35,9 @@ main {
     background: url("../img/spot1.png") no-repeat center center;
     background-size: cover;
     opacity: 0;
-    animation: spot1 12s;
+    transform: rotate(-45deg);
+    transform-origin: 50% 50%;
+    animation: spot1 10s;
 }
 
 .spot2 {
@@ -47,7 +49,9 @@ main {
     background: url("../img/spot2.png") no-repeat center center;
     background-size: cover;
     opacity: 0;
-    animation: spot2 12s;
+    transform: rotate(-45deg);
+    transform-origin: 50% 50%;
+    animation: spot2 10s;
 }
 
 .rainbow {
@@ -59,26 +63,70 @@ main {
     background: url("../img/rainbow.png") no-repeat center center;
     background-size: cover;
     opacity: .7;
-    animation: rainbow 12s;
+    animation: rainbow 10s;
 }
 
 @keyframes spot1 {
-    0% { opacity: 0; transform: rotate(0deg); }
-    20%, 40% { opacity: 1; transform: rotate(0deg); }
-    60% { opacity: 1; transform: rotate(-90deg); }
-    80% { opacity: 1; transform: rotate(-45deg); }
-    100% { opacity: 0; transform: rotate(-45deg); }
+    0% {
+        opacity: 0;
+        transform: rotate(0deg);
+        transform-origin: 50% 50%;
+    }
+    20%, 40% {
+        opacity: 1;
+        transform: rotate(0deg);
+        transform-origin: 50% 50%;
+    }
+    60% {
+        opacity: 1;
+        transform: rotate(-90deg);
+        transform-origin: 50% 50%;
+    }
+    80% {
+        opacity: 1;
+        transform: rotate(-45deg);
+        transform-origin: 50% 50%;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(-45deg);
+        transform-origin: 50% 50%;
+    }
 }
 
 @keyframes spot2 {
-    0%, 20% { opacity: 0; transform: rotate(0deg); }
-    40% { opacity: 1; transform: rotate(0deg); }
-    60% { opacity: 1; transform: rotate(-90deg); }
-    80% { opacity: 1; transform: rotate(-45deg); }
-    100% { opacity: 0; transform: rotate(-45deg); }
+    0%, 20% {
+        opacity: 0;
+        transform: rotate(0deg);
+        transform-origin: 50% 50%;
+    }
+    40% {
+        opacity: 1;
+        transform: rotate(0deg);
+        transform-origin: 50% 50%;
+    }
+    60% {
+        opacity: 1;
+        transform: rotate(-90deg);
+        transform-origin: 50% 50%;
+    }
+    80% {
+        opacity: 1;
+        transform: rotate(-45deg);
+        transform-origin: 50% 50%;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(-45deg);
+        transform-origin: 50% 50%;
+    }
 }
 
 @keyframes rainbow {
-    0%, 80% { opacity: 0; }
-    100% { opacity: .7; }
+    0%, 80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: .7;
+    }
 }
